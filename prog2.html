@@ -1,0 +1,43 @@
+<!-- Iterating over array of objects using  jQuery -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
+    </script>
+    <script>
+        var peoples = [{
+            name: "Bidhu",
+            age: 29
+        }, {
+            name: "Rintu",
+            age: 30
+        }, {
+            name: "Tipu",
+            age: 28
+        }, {
+            name: "sonu",
+            age: 25
+        }];
+        $.each(peoples, function(index, value) {
+            if (peoples[index].name == "Tipu") {
+                console.log(peoples[index]); //O/P: {name: "Tipu", age: 28}
+                console.log(value); // {name: "Tipu", age: 28}
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="parent__div">
+        <p>Parent!!! Div</p>
+        <div class="child__div">
+            <p>Child!!! Div</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
