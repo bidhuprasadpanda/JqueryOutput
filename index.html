@@ -1,0 +1,36 @@
+<!-- Onclick of Parent!!! Div Class O/P Hi i am in parent
+    Onclick of Child!!! Div Class O/P 
+    index.html:13 Hi i am in Child
+    index.html:10 Hi i am in parent
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.parent__div').click(function() {
+                console.log("Hi i am in parent");
+            });
+            $('.child__div').click(function() {
+                console.log("Hi i am in Child");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="parent__div">
+        <p>Parent!!! Div</p>
+        <div class="child__div">
+            <p>Child!!! Div</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
